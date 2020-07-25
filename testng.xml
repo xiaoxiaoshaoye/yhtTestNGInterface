@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test",allow-return-values="true">
+    <classes>
+      <class name="yhtTestNG02.yhtTestNG02.AppTest"/>
+      <class name="yhtTestNG02.yhtTestNG02.UserTestNG"/>
+      <class name="yhtTestNG02.yhtTestNG02.ExcelData"/>
+      <class name="yhtTestNG02.yhtTestNG02.baomaInterface"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

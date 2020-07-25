@@ -1,0 +1,247 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>yhtTestNG02</groupId>
+	<artifactId>yhtTestNG02</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>yhtTestNG02</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency> <groupId>org.apache.poi</groupId> <artifactId>poi</artifactId> 
+			<version>${poi.version}</version> </dependency> <dependency> <groupId>org.apache.poi</groupId> 
+			<artifactId>poi-ooxml</artifactId> <version>${poi.version}</version> </dependency> -->
+
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<!-- <dependency> <groupId>com.yonyou.yht</groupId> <artifactId>yht-sdk-external</artifactId> 
+			<version>2.0-SNAPSHOT</version> </dependency> -->
+		<dependency>
+			<groupId>com.yonyou.iuap</groupId>
+			<artifactId>iuap-tenant-sdk</artifactId>
+			<version>5.0.14-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.8.7</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.8.7</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+			<version>3.3.2</version>
+			<exclusions>
+				<exclusion>
+					<!-- declare the exclusion here -->
+					<groupId>org.bouncycastle</groupId>
+					<artifactId>bcprov-jdk15</artifactId>
+				</exclusion>
+				<exclusion>
+					<!-- declare the exclusion here -->
+					<groupId>xalan</groupId>
+					<artifactId>xalan</artifactId>
+				</exclusion>
+				<exclusion>
+					<!-- declare the exclusion here -->
+					<groupId>commons-collections</groupId>
+					<artifactId>commons-collections</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!--集成友户通登录需要 -->
+		<!-- <dependency> <groupId>com.yonyou.yht</groupId> <artifactId>yht-sso-client</artifactId> 
+			<version>0.4-SNAPSHOT</version> </dependency> -->
+		<!-- 登录后使用Redis存储session时需要 -->
+		<!-- <dependency> <groupId>com.yonyou.yht</groupId> <artifactId>yht-sso-cache</artifactId> 
+			<version>0.4-SNAPSHOT</version> </dependency> -->
+		<!--调用友户通SDK的依赖 -->
+
+		<dependency>
+			<groupId>com.yonyou.yht</groupId>
+			<artifactId>yht-sdk</artifactId>
+			<version>5.0.14-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.1.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yonyou.iuap</groupId>
+			<artifactId>iuap-security</artifactId>
+			<version>5.0.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>jcl-over-slf4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xom</groupId>
+					<artifactId>xom</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>json-lib</artifactId>
+					<groupId>net.sf.json-lib</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bcprov-jdk16</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>${junit.version}</version> <scope>test</scope> </dependency> <dependency> 
+			<groupId>org.assertj</groupId> <artifactId>assertj-core</artifactId> <version>${assertj.version}</version> 
+			<scope>test</scope> </dependency> -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.15</version>
+		</dependency>
+		<dependency>
+		 <groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.0.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>yht-cloud-release</id>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<name>yht-cloud-release</name>
+			<url>http://maven.yonyou.com/nexus/content/repositories/YHTCloud-Release/</url>
+		</repository>
+		<repository>
+			<id>yht-cloud-snapshot</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<name>yht-cloud-snapshot</name>
+			<url>http://maven.yonyou.com/nexus/content/repositories/YHTCloud-Snapshot/</url>
+		</repository>
+		<repository>
+			<id>yonyou-cloud-release</id>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<name>yonyou-cloud-release</name>
+			<url>http://maven.yonyou.com/nexus/content/repositories/YonyouCloud-Release/</url>
+		</repository>
+		<repository>
+			<id>yonyou-cloud-snapshot</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<name>yonyou-cloud-snapshot</name>
+			<url>http://maven.yonyou.com/nexus/content/repositories/YonyouCloud-Snapshot/</url>
+		</repository>
+		<repository>
+			<id>iuap-stage</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<name>iuap-stage</name>
+			<url>https://maven.yonyou.com/nexus/repository/iUAP-Stagings/</url>
+		</repository>
+		<repository>
+			<id>iuap-snap</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<name>iuap-snap</name>
+			<url>https://maven.yonyou.com/nexus/repository/iUAP-Snapshots/</url>
+		</repository>
+	</repositories>
+</project>

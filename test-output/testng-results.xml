@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1284" started-at="2020-07-22T07:54:08Z" finished-at="2020-07-22T07:54:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1284" started-at="2020-07-22T07:54:08Z" finished-at="2020-07-22T07:54:09Z">
+      <class name="yhtTestNG02.yhtTestNG02.baomaInterface">
+        <test-method status="PASS" signature="addScopeUserTest()[pri:0, instance:yhtTestNG02.yhtTestNG02.baomaInterface@25bbe1b6]" name="addScopeUserTest" duration-ms="894" started-at="2020-07-22T15:54:08Z" finished-at="2020-07-22T15:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addScopeUserTest -->
+        <test-method status="PASS" signature="genLoginTokenWithScopeTest()[pri:0, instance:yhtTestNG02.yhtTestNG02.baomaInterface@25bbe1b6]" name="genLoginTokenWithScopeTest" duration-ms="212" started-at="2020-07-22T15:54:09Z" finished-at="2020-07-22T15:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genLoginTokenWithScopeTest -->
+        <test-method status="PASS" signature="getLoginTokenByAccessTokenTest()[pri:0, instance:yhtTestNG02.yhtTestNG02.baomaInterface@25bbe1b6]" name="getLoginTokenByAccessTokenTest" duration-ms="21" started-at="2020-07-22T15:54:09Z" finished-at="2020-07-22T15:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginTokenByAccessTokenTest -->
+        <test-method status="PASS" signature="getScopeUserInfoTest()[pri:0, instance:yhtTestNG02.yhtTestNG02.baomaInterface@25bbe1b6]" name="getScopeUserInfoTest" duration-ms="42" started-at="2020-07-22T15:54:09Z" finished-at="2020-07-22T15:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getScopeUserInfoTest -->
+        <test-method status="PASS" signature="modifyScopeUserTest()[pri:0, instance:yhtTestNG02.yhtTestNG02.baomaInterface@25bbe1b6]" name="modifyScopeUserTest" duration-ms="2" started-at="2020-07-22T15:54:09Z" finished-at="2020-07-22T15:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyScopeUserTest -->
+        <test-method status="PASS" signature="generateAccessTokenWithScopeTest()[pri:0, instance:yhtTestNG02.yhtTestNG02.baomaInterface@25bbe1b6]" name="generateAccessTokenWithScopeTest" duration-ms="87" started-at="2020-07-22T15:54:09Z" depends-on-methods="yhtTestNG02.yhtTestNG02.baomaInterface.getScopeUserInfoTest" finished-at="2020-07-22T15:54:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateAccessTokenWithScopeTest -->
+      </class> <!-- yhtTestNG02.yhtTestNG02.baomaInterface -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
